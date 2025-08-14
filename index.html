@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regenesis Project</title>
+    <style>
+        /* 기본 스타일 초기화 및 하단 배너 공간 확보 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            padding-bottom: 80px; /* 하단 배너에 의해 마지막 이미지가 가려지지 않도록 패딩 추가 */
+        }
+
+        /* 이미지 스타일 */
+        img {
+            display: block;
+            width: 100%;
+            height: auto; /* 이미지 비율 유지를 위해 height는 auto로 설정 */
+        }
+
+        /* 고정 하단 배너 스타일 */
+        .footer-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #a32035; /* 지정된 배경색 */
+            z-index: 100;
+            animation: heartbeat 1.5s ease-in-out infinite; /* 심장 박동 애니메이션 적용 */
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 배너 링크 스타일 */
+        .footer-banner a {
+            display: block;
+            padding: 20px 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* 배너 애니메이션 정의 */
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="001.jpg" alt="Project Image 1">
+    <img src="002.jpg" alt="Project Image 2">
+    <img src="003.jpg" alt="Project Image 3">
+    <img src="004.jpg" alt="Project Image 4">
+    <img src="005.jpg" alt="Project Image 5">
+    <img src="007.jpg" alt="Project Image 7">
+    <img src="008.jpg" alt="Project Image 8">
+    <img src="009.jpg" alt="Project Image 9">
+    <img src="010.jpg" alt="Project Image 10">
+    <img src="011.jpg" alt="Project Image 11">
+    <img src="013.jpg" alt="Project Image 13">
+    <img src="014.jpg" alt="Project Image 14">
+
+    <div class="footer-banner">
+        <a href="http://pf.kakao.com/_eTyqn/chat" target="_blank" rel="noopener noreferrer">
+            카카오톡 상담바로가기
+        </a>
+    </div>
+
+</body>
+</html>
